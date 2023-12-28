@@ -1,0 +1,12 @@
+{
+  "name": "Astro-soldier",
+  "short_name": "Astro-soldier",
+  "id": "com.rattaysastrosoldier",
+  "description": "A small POC for a wave survival.",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
