@@ -1,0 +1,12 @@
+{
+  "name": "super-screen-cleaner",
+  "short_name": "super-screen-cleaner",
+  "id": "com.example.gamename",
+  "description": "",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
