@@ -5,9 +5,26 @@ gdjs.menuCode.GDplayObjects1= [];
 gdjs.menuCode.GDplayObjects2= [];
 gdjs.menuCode.GDhowtoObjects1= [];
 gdjs.menuCode.GDhowtoObjects2= [];
+gdjs.menuCode.GDbackgroundObjects1= [];
+gdjs.menuCode.GDbackgroundObjects2= [];
+gdjs.menuCode.GDcreditsObjects1= [];
+gdjs.menuCode.GDcreditsObjects2= [];
 
 
 gdjs.menuCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.prioritizeLoadingOfScene(runtimeScene, "game");
+}}
+
+}
+
 
 {
 
@@ -24,28 +41,12 @@ for (var i = 0, k = 0, l = gdjs.menuCode.GDplayObjects1.length;i<l;++i) {
 }
 gdjs.menuCode.GDplayObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "game", false);
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("howto"), gdjs.menuCode.GDhowtoObjects1);
-
-let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.menuCode.GDhowtoObjects1.length;i<l;++i) {
-    if ( gdjs.menuCode.GDhowtoObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.menuCode.GDhowtoObjects1[k] = gdjs.menuCode.GDhowtoObjects1[i];
-        ++k;
-    }
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.areSceneAssetsLoaded(runtimeScene, "game");
 }
-gdjs.menuCode.GDhowtoObjects1.length = k;
 if (isConditionTrue_0) {
-}
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "game", true);
+}}
 
 }
 
@@ -61,6 +62,10 @@ gdjs.menuCode.GDplayObjects1.length = 0;
 gdjs.menuCode.GDplayObjects2.length = 0;
 gdjs.menuCode.GDhowtoObjects1.length = 0;
 gdjs.menuCode.GDhowtoObjects2.length = 0;
+gdjs.menuCode.GDbackgroundObjects1.length = 0;
+gdjs.menuCode.GDbackgroundObjects2.length = 0;
+gdjs.menuCode.GDcreditsObjects1.length = 0;
+gdjs.menuCode.GDcreditsObjects2.length = 0;
 
 gdjs.menuCode.eventsList0(runtimeScene);
 

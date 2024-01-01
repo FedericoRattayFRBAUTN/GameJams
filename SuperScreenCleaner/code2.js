@@ -33,7 +33,7 @@ gdjs.end_95screenCode.eventsList0 = function(runtimeScene) {
 let isConditionTrue_0 = false;
 {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(0);
-}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "menu", false);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "menu", true);
 }}
 
 }
@@ -47,7 +47,7 @@ let isConditionTrue_0 = false;
 let isConditionTrue_0 = false;
 {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(0);
-}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "game", false);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "game", true);
 }}
 
 }
